@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Rohith</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/c5e770e416.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="Images/logo.png" class="logo" alt="Logo">
+        <ul id = "sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">My Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+		  <i class="fa-solid fa-square-xmark" onClick = "closemenu()"></i>
+        </ul>
+		
+		<i class="fa-solid fa-bars" onclick = "openmenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <p>Aspiring Software Engineer</p>
+        <h1>Hi, I'm <span>Rohith</span><br>from India</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+   <br>
+   <br>
+   <br>
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="Images/iam.png" alt="Rohith's photo">
+        </div>
+
+        <div class="about-col-2">
+          <h1 class = "sub-title">About Me</h1><br>
+          <p>Iam an Aspiring Software Engineer and MCA graduate (2026) with strong object-oriented programming in Java, Python, and React.js, focused on developing scalable software solutions. Experienced in designing user interfaces, algorithms, data structures, and unit testing to meet functional requirements. Proven debugging skills using VSCode, with hands-on exposure to RESTful APIs, MySQL databases, and version control via Git. Eager to contribute to reputed organization through rapid learning, analytical problem-solving, and clear communication with cross-functional teams.</p>
+        <div class="tab-titles">
+            <p class = "tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class ="tab-links" onclick="opentab('experience')"> Experience</p>
+            <p class = "tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-content active-tab" id = "skills">
+            <ul>
+                <li><span>Java</span><br>Scalable Applications</li>
+                 <li><span>Python</span><br>AI-enabled platform</li>
+                  <li><span>React</span><br>Web App Development</li>
+            </ul>
+        </div>
+        <div class="tab-content" id = "experience">
+            <ul>
+                <li><span>Python Developer Intern at Emglitz Tech (June 2023 - June 2023)</span><br>Analyzed requirements and developed an Employee Management System using Python and MySQL, implementing automated CRUD operations that managed 200+ records and reduced manual data entry by 50%. Designed secure authentication module with hashed passwords and object-oriented principles, ensuring data protection compliance and enhancing system reliability.Automated unit tests with standard tools, verifying functionality and reducing integration errors by 30%.
+
+
+</li>
+                 
+            </ul>
+        </div>
+        <div class="tab-content" id = "education">
+            <ul>
+                <li><span>Master of Computer Applications  (2024 - 2026)</span><br>Muthayammal Engineer College(Autonomous)<br> Affiliated to Anna University <br>CGPA : 8.8</li>
+                 <li><span>Bachelor of Computer Applications (2021 - 2024)</span><br>K.S.Rangasamy College of Arts and Science(Autonomous)<br> Affiliated to Periyar University<br> CGPA : 7.8</li>
+                  
+            </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="services">
+    <div class="container">
+      <h1 class = "sub-title">My Projects  <i class="fa-solid fa-code"></i></h1>
+        <div class="service-list">
+          <div>
+            <i class="fa-solid fa-building-columns"></i>
+            <h2>TechNest</h2>
+            <br>
+            <p align = "justify">TechNest is a comprehensive web-based information and management platform 
+              designed exclusively for the MCA Department of Muthayammal Engineering College. 
+               </p>
+              <a href ="https://github.com/Rohithperiyasamy/MCA-Department-Website-">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-leaf"></i>
+            <h2>Leaf Guard </h2>
+            <br>
+            <p align = "justify">LeafGuard is an AI-powered system that analyzes plant leaf images to 
+              detect and classify diseases with high accuracy. </p>
+              <a href ="https://github.com/Rohithperiyasamy/plant-disease-identification">Learn more</a>
+          </div>
+<div>
+  <i class="fa-regular fa-address-card"></i>
+            <h2>EmpTrack System </h2>
+            <br>
+            <p align = "justify">It is a Python-based application designed to streamline employee data handling,
+               attendance tracking, and payroll management.</p>
+              <a href =#>Learn more</a>
+          </div>
+
+
+        </div>
+     
+    </div>
+  </div>
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class = "sub-title">Contact Me</h1>
+          <p><i class="fa-regular fa-envelope"></i>rohithperiyasamy7@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i>91+8248297075</p>
+          <div class="social-icons">
+            <a href = "https://www.linkedin.com/in/rohith74/"><i class="fa-brands fa-linkedin"></i></a>
+           <a href = "https://leetcode.com/u/Rohithperiyasamy74/"><i class="fa-solid fa-code"></i></a>
+           <a href = "https://github.com/Rohithperiyasamy"><i class="fa-brands fa-github"></i></a>
+           <a href ="https://www.geeksforgeeks.org/user/rohithperqdk1/"><i class="fa-solid fa-code"></i></a>
+          </div>
+          <br>
+          <br>
+           <a href ="Images/MyCV.pdf" class = "btn btn2">Download CV</a>
+        </div>
+       
+        <div class="contact-right">
+         <form name="submit-to-google-sheet">
+  <input type="text" name="name" id="Name" placeholder="Your Name" required>
+  <input type="email" name="email" id="Email" placeholder="Your Email" required>
+  <textarea name="message" id="Message" rows="6" placeholder="Your Message"></textarea>
+  <button type="submit" class="btn btn2">Submit</button>
+</form>
+
+
+
+        </div>
+      </div>
+    </div>
+    <br>
+<div>
+  <div class="copyright">
+    <br>
+    <p>© 2025 Rohith. All Rights Reserved.</p>
+  </div>
+</div>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+<script>
+
+var side = document.getElementById("sidemenu");
+function openmenu()
+{
+side.style.right = "0";
+}
+function closemenu()
+{
+side.style.right = "-200px";
+}
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwRw-eQnwFez3KrMM1kc24rMgVG3fPVJt66OosZ3kHTUYCceiTEQpCSWFDWQnJ2qhpA/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        alert("Message sent successfully!");
+        form.reset();
+      })
+      .catch(error => {
+        alert("Error sending message!");
+        console.error(error);
+      });
+  })
+</script>
+
+
+
+
+</body>
+</html>
